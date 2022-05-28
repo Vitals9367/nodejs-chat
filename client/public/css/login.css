@@ -1,0 +1,43 @@
+.login-form {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login-form-control {
+
+    height: fit-content;
+    width: 600px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 70px 30px 100px 30px;
+}
+
+.login-form-control h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(0, 173, 173);
+}
+
+.login-form-control input {
+    margin-bottom: 20px;
+}
+
+.login-form-control button {
+    cursor: pointer;
+}
+
+.login-form-control * {
+    width: 300px;
+}

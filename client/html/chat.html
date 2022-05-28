@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Socket.IO chat</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/chat.css">
+  </head>
+
+  <body>
+    <div class="chat-panel">
+      <div class="chat-sidebar">
+        <div class="chat-header">
+          <h3 class="chat-name" id="chat-sidebar__room-name"></h3>
+          <form action="/" method="GET">
+            <button type="submit">Leave Room</button>
+          </form>
+        </div>
+        <span class="sidebar-seperator"></span>
+        <div class="user-list" id="chat-sidebar__user-list">
+        </div>
+      </div>
+      <div class="chat-main">
+        <form class="chat-navbar">
+          <h3 class="chat-name-navbar" id="chat-sidebar__room-name">asdasd</h3>
+          <button type="submit">Leave Room</button>
+        </form>
+        <div id="chat-messages">
+        </div>
+        <form id="chat-form" action="">
+          <div class="form-control">
+            <input id="msg" type="text" placeholder="Enter message..." required autocomplete="off" />
+            <button>Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js" integrity="sha512-juaCj8zi594KHQqb92foyp87mCSriYjw3BcTHaXsAn4pEB1YWh+z+XQScMxIxzsjfM4BeVFV3Ij113lIjWiC2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+
+</html>
